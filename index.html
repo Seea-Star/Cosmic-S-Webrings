@@ -75,7 +75,7 @@
     }
     .box-body { padding: 20px; font-size: 0.9rem; line-height: 1.6; }
 
-    /* Griglia dei bottoni 88x31 */
+    /* Griglia dei bottoni senza bordi */
     .buttons-grid {
       display: flex;
       flex-wrap: wrap;
@@ -84,12 +84,12 @@
       align-items: center;
     }
 
-    /* Regola per uniformare le dimensioni dei bottoni nella griglia */
     .buttons-grid a img {
       width: 88px;
       height: 31px;
       image-rendering: pixelated;
-      border: 1px solid #111111;
+      border: none; /* Tolto il bordo */
+      outline: none;
       transition: transform 0.1s ease;
       display: block;
     }
@@ -113,7 +113,7 @@
       <div class="box-body">
         <p style="margin-bottom: 16px; text-align: center; font-size: 0.85rem;">Here are some awesome sites created by cool people. Click to visit them!</p>
         
-        <!-- Griglia con i bottoni inseriti -->
+        <!-- Griglia dei bottoni senza bordi -->
         <div class="buttons-grid">
           
           <a href="https://cloverstar.neocities.org/" target="_blank"><img src="https://cloverstar.neocities.org/images/button2.gif" alt="cloverstar"></a>
@@ -133,4 +133,3 @@
 
 </body>
 </html>
-
