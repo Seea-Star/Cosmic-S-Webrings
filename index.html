@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSMIC-S - Webrings</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #f5f5f7;
+      background-image: 
+        linear-gradient(#e1e1e6 1px, transparent 1px),
+        linear-gradient(90deg, #e1e1e6 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: #111111;
+      font-family: 'Quicksand', sans-serif;
+      padding: 30px 10px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .site-wrapper {
+      max-width: 980px;
+      width: 100%;
+      background: #ffffff;
+      border: 3px solid #111111;
+      border-radius: 32px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 6px 6px 0px #111111;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .top-banner {
+      background: #111111;
+      border: 2px solid #111111;
+      border-radius: 20px;
+      padding: 12px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-banner h1 { 
+      font-size: 2.5rem; 
+      font-weight: 800; 
+      letter-spacing: 3px; 
+      color: #ffffff;
+      text-align: left;
+      line-height: 1;
+      text-shadow: 0 0 10px rgba(255,255,255,0.9);
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .box {
+      background: #ffffff;
+      border: 2px solid #111111;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 3px 3px 0px #111111;
+    }
+    .box-header {
+      background: #f0f0f3;
+      border-bottom: 2px solid #111111;
+      padding: 10px 16px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .box-header-accent {
+      background: #F3EEDA;
+      border-bottom: 2px solid #111111;
+      padding: 10px 16px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #111111;
+    }
+    .box-body { padding: 20px; font-size: 0.9rem; line-height: 1.6; }
+
+    /* Stile per i box dei Webring */
+    .webring-box {
+      background: #F3EEDA;
+      border: 2px solid #111;
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 3px 3px 0px #111;
+      margin-bottom: 16px;
+    }
+    .webring-title {
+      font-weight: 800;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .webring-desc {
+      font-size: 0.8rem;
+      margin-bottom: 12px;
+    }
+    .webring-nav {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.65rem;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .webring-nav a {
+      background: #111;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 2px solid #111;
+      transition: background 0.1s;
+    }
+    .webring-nav a:hover {
+      background: #333;
+    }
+
+    /* Griglia per i siti amici/bottoni 88x31 */
+    .affiliates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .affiliate-card {
+      border: 2px dashed #111;
+      padding: 12px;
+      border-radius: 12px;
+      text-align: center;
+      background: #fafafa;
+    }
+    .affiliate-card img {
+      max-width: 88px;
+      height: 31px;
+      image-rendering: pixelated;
+      margin-bottom: 6px;
+      border: 1px solid #111;
+    }
+    .affiliate-name {
+      font-weight: 800;
+      font-size: 0.8rem;
+      display: block;
+      margin-bottom: 4px;
+      color: #111;
+      text-decoration: none;
+    }
+    .affiliate-name:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <header class="top-banner">
+      <h1>WEBRINGS</h1>
+      <a href="index.html" style="background:#F3EEDA; color:#111; border:2px solid #111; padding:8px 14px; border-radius:12px; font-weight:800; font-size:0.75rem; text-decoration:none; box-shadow:2px 2px 0px #111;">← HOME</a>
+    </header>
+
+    <div class="content-container">
+
+      <!-- Introduzione -->
+      <div class="box">
+        <div class="box-header-accent"><span>what is this?</span><span>★</span></div>
+        <div class="box-body">
+          <p style="margin-bottom: 8px;"><strong>Welcome to the Webrings & Affiliates page!</strong></p>
+          <p>Back in the classic era of the internet, webrings were a popular way to connect independent websites centered around a specific theme, interest, or aesthetic. Here you can find the rings I joined and the wonderful sites created by friends and fellow web-design enthusiasts!</p>
+        </div>
+      </div>
+
+      <!-- Sezione Webrings -->
+      <div class="box">
+        <div class="box-header"><span>joined_webrings</span><span>[∞]</span></div>
+        <div class="box-body">
+          
+          <!-- Webring 1 -->
+          <div class="webring-box">
+            <div class="webring-title">✨ The Indie Webring ✨</div>
+            <div class="webring-desc">A ring dedicated to personal sites, creative portfolios, and independent web projects.</div>
+            <div class="webring-nav">
+              <a href="#" target="_blank">&lt; Prev</a>
+              <a href="#" target="_blank">Random</a>
+              <a href="#" target="_blank">Next &gt;</a>
+            </div>
+            <div style="font-size: 0.7rem; font-family: monospace;">[ Ring Master: <a href="#" style="color: #111;">SiteName</a> ]</div>
+          </div>
+
+          <!-- Webring 2 -->
+          <div class="webring-box" style="background: #eef2f7;">
+            <div class="webring-title">🌙 Neo-Retro Ring 🌙</div>
+            <div class="webring-desc">Celebrating y2k aesthetics, pixel art, and old-school browser vibes.</div>
+            <div class="webring-nav">
+              <a href="#" target="_blank">&lt; Prev</a>
+              <a href="#" target="_blank">Random</a>
+              <a href="#" target="_blank">Next &gt;</a>
+            </div>
+            <div style="font-size: 0.7rem; font-family: monospace;">[ Ring Master: <a href="#" style="color: #111;">AnotherSite</a> ]</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sezione Siti Amici / Affiliati -->
+      <div class="box">
+        <div class="box-header-accent"><span>cool_sites & affiliates</span><span>♥</span></div>
+        <div class="box-body">
+          <p style="margin-bottom: 14px; font-size: 0.85rem;">Check out these amazing corners of cyberspace:</p>
+          
+          <div class="affiliates-grid">
+            
+            <!-- Card Affiliato 1 -->
+            <div class="affiliate-card">
+              <img src="https://via.placeholder.com/88x31/111/fff?text=Site+1" alt="Site 1 Button">
+              <a href="#" target="_blank" class="affiliate-name">Friend's Site</a>
+              <div style="font-size: 0.7rem; color: #555;">A cool creative space full of art and cool layouts.</div>
+            </div>
+
+            <!-- Card Affiliato 2 -->
+            <div class="affiliate-card">
+              <img src="https://via.placeholder.com/88x31/111/fff?text=Site+2" alt="Site 2 Button">
+              <a href="#" target="_blank" class="affiliate-name">Cyber Realm</a>
+              <div style="font-size: 0.7rem; color: #555;">An aesthetic blog with great music playlists.</div>
+            </div>
+
+            <!-- Card Affiliato 3 -->
+            <div class="affiliate-card">
+              <img src="https://via.placeholder.com/88x31/111/fff?text=Site+3" alt="Site 3 Button">
+              <a href="#" target="_blank" class="affiliate-name">Pixel Garden</a>
+              <div style="font-size: 0.7rem; color: #555;">A cozy personal corner on Neocities.</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
