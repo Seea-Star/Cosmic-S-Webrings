@@ -88,7 +88,7 @@
       width: 88px;
       height: 31px;
       image-rendering: pixelated;
-      border: none; /* Tolto il bordo */
+      border: none;
       outline: none;
       transition: transform 0.1s ease;
       display: block;
@@ -96,6 +96,31 @@
 
     .buttons-grid a img:hover {
       transform: translateY(-2px);
+    }
+
+    /* --- CODICE RESPONSIVE PER SMARTPHONE --- */
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 10px 5px;
+      }
+      .site-wrapper {
+        padding: 14px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 0px #111111;
+        gap: 12px;
+      }
+      .top-banner {
+        padding: 10px 15px;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .top-banner h1 {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+      }
+      .box-body {
+        padding: 14px;
+      }
     }
   </style>
 </head>
