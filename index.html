@@ -98,6 +98,15 @@
       transform: translateY(-2px);
     }
 
+    /* Contenitore per affiancare i widget dei webring */
+    .webrings-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
     /* --- CODICE RESPONSIVE PER SMARTPHONE --- */
     @media screen and (max-width: 768px) {
       body {
@@ -133,11 +142,74 @@
       <a href="https://seea-star.github.io/Cosmic-S-Home/" style="background:#F3EEDA; color:#111; border:2px solid #111; padding:8px 14px; border-radius:12px; font-weight:800; font-size:0.75rem; text-decoration:none; box-shadow:2px 2px 0px #111;"><- HOME</a>
     </header>
 
+    <!-- SEZIONE WEB-RING WIDGET IN ALTO (AFFIANCATI) -->
+    <div class="box">
+      <div class="box-header-accent"><span>webrings</span><span>★</span></div>
+      <div class="box-body">
+        
+        <div class="webrings-container">
+          <!-- Widget 1: Doodlering -->
+          <div id="doodlering">
+              <script type="text/javascript" src="https://evehibi.nekoweb.org/doodlering/onionring-widget.js"></script>
+              <link rel="stylesheet" href="https://evehibi.nekoweb.org/doodlering/onionring.css">
+          </div>
+
+          <!-- Widget 2: Astronomy Webring -->
+          <div id="astroring">
+              <script src="https://astroring.auroradynia.com/ring.js"></script>
+
+            <style>
+  .cosmic-club-widget {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    border: 2px solid #E1DAB9;
+    border-radius: 13px;
+    box-shadow: 4px 4px 0px #E1DAB9;
+    background-image: 
+      radial-gradient(#FFFFFF 1.3px, transparent 1.3px),
+      radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px),
+      radial-gradient(#FFFFFF 0.7px, transparent 0.7px);
+    background-size: 110px 110px, 160px 160px, 75px 75px;
+    background-position: 0 0, 50px 80px, 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  .cosmic-club-widget:hover {
+    transform: scale(1.02);
+  }
+  .cosmic-club-widget:active {
+    transform: translate(2px, 2px) scale(0.99);
+    box-shadow: 1px 1px 0px #E1DAB9;
+  }
+  .cosmic-club-widget img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+  }
+</style>
+
+<a href="https://seea-star.github.io/Cosmic-S-Club/" target="_blank" class="cosmic-club-widget">
+  <img src="https://seea-star.github.io/Cosmic-S-Club/Senza%20titolo%2013_20260914185659.png" alt="Cosmic Club Member">
+</a>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEZIONE COOL SITES (BOTTONI) SOTTO -->
     <div class="box">
       <div class="box-header-accent"><span>cool sites</span><span>♥</span></div>
       <div class="box-body">
         
-        <!-- Griglia dei bottoni senza bordi -->
         <div class="buttons-grid">
           
           <a href="https://cloverstar.neocities.org/" target="_blank"><img src="https://cloverstar.neocities.org/images/button2.gif" alt="cloverstar"></a>
@@ -196,6 +268,12 @@
           <a href="https://wagi.lol"><img src="https://wagi.lol/wagisnookbutton.gif" alt="wagi.lol"></a>
         
           <a href="https://artivadar.neocities.org/"><img src="https://artivadar.neocities.org/artivadar_button2.png"></a>
+          
+          <a href="https://vanillamilkshake.neocities.org"><img src="https://f.feridinha.com/chONI.png"/></a>
+          
+          <a href="https://guest1013.neocities.org" target="_blank"><img src="https://guest1013.neocities.org/images/badges/site-buttons/TRVR-badge-small.svg" width=88 height=31></a>
+          
+          <a href="https://alphacentauri.neocities.org/"><img src="https://alphacentauri.neocities.org/_img/alphacentauri.gif" alt="alphacentauri"></a>
           
         </div>
 
