@@ -107,50 +107,6 @@
       align-items: center;
     }
 
-    /* Stili per i singoli widget per mantenerli separati e centrati */
-    .webring-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* Stili del tuo widget Cosmic Club */
-    .cosmic-club-widget {
-      width: 200px;
-      height: 200px;
-      background-color: #000000;
-      border: 2px solid #E1DAB9;
-      border-radius: 13px;
-      box-shadow: 4px 4px 0px #E1DAB9;
-      background-image: 
-        radial-gradient(#FFFFFF 1.3px, transparent 1.3px),
-        radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px),
-        radial-gradient(#FFFFFF 0.7px, transparent 0.7px);
-      background-size: 110px 110px, 160px 160px, 75px 75px;
-      background-position: 0 0, 50px 80px, 25px 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-sizing: border-box;
-      transition: transform 0.1s ease, box-shadow 0.1s ease;
-    }
-    .cosmic-club-widget:hover {
-      transform: scale(1.02);
-    }
-    .cosmic-club-widget:active {
-      transform: translate(2px, 2px) scale(0.99);
-      box-shadow: 1px 1px 0px #E1DAB9;
-    }
-    .cosmic-club-widget img {
-      width: 150px;
-      height: 150px;
-      object-fit: contain;
-      display: block;
-      pointer-events: none;
-    }
-
     /* --- CODICE RESPONSIVE PER SMARTPHONE --- */
     @media screen and (max-width: 768px) {
       body {
@@ -183,7 +139,7 @@
 
     <header class="top-banner">
       <h1>WEBRINGS</h1>
-      <a href="https://seea-star.github.io/Cosmic-S-Home/" style="background:#F3EEDA; color:#111; border:2px solid #111; padding:8px 14px; border-radius:12px; font-weight:800; font-size:0.75rem; text-decoration:none; box-shadow:2px 2px 0px #111;"><- HOME</a>
+      <a href="https://cosmic-seea.neocities.org/Home" style="background:#F3EEDA; color:#111; border:2px solid #111; padding:8px 14px; border-radius:12px; font-weight:800; font-size:0.75rem; text-decoration:none; box-shadow:2px 2px 0px #111;"><- HOME</a>
     </header>
 
     <!-- SEZIONE WEB-RING WIDGET IN ALTO (AFFIANCATI) -->
@@ -193,56 +149,22 @@
         
         <div class="webrings-container">
           <!-- Widget 1: Doodlering -->
-          <div class="webring-item" id="doodlering">
-              <script type="text/javascript" src="https://evehibi.nekoweb.org/doodlering/onionring-widget.js"></script>
-              <link rel="stylesheet" href="https://evehibi.nekoweb.org/doodlering/onionring.css">
-          </div>
+          <div id="doodlering">
+<iframe src="https://evehibi.nekoweb.org/doodlering/widget.html?theme=starsabove" frameborder=0 margin=0 width=180 height=110></iframe>
 
+    <link rel="stylesheet" href="https://evehibi.nekoweb.org/doodlering/onionring.css">
+</div>
+<!--17776-->
+          <div>
+    <a href="https://cloverstar.neocities.org/17776ring/"><b><img style="border: 1px solid white; width: 130px; height: auto;" src="https://cloverstar.neocities.org/17776ring/images/17776ring2.png"></b></a><br/>
+    <a href="https://cloverstar.neocities.org/17776ring/?action=previous"><img style="width: 30px; height: auto;" src="https://cloverstar.neocities.org/17776ring/images/back.gif"></a>
+    <a style="color: blue; font-size: 18px; font-family: arial;" href="https://cloverstar.neocities.org/17776ring/?action=random">random</a>
+    <a href="https://cloverstar.neocities.org/17776ring/?action=next"><img style="width: 30px; height: auto;" src="https://cloverstar.neocities.org/17776ring/images/next.gif"></a>
+</div>
+             
           <!-- Widget 2: Astronomy Webring -->
-          <div class="webring-item" id="astroring">
+          <div id="astroring">
               <script src="https://astroring.auroradynia.com/ring.js"></script>
-          </div>
-
-          <!-- Widget 3: Cosmic Club Member -->
-          <div class="webring-item" id="cosmic-club">
-            <style>
-  .cosmic-club-widget {
-    width: 200px;
-    height: 200px;
-    background-color: #000000;
-    border: 2px solid #E1DAB9;
-    border-radius: 13px;
-    box-shadow: 4px 4px 0px #E1DAB9;
-    background-image: 
-      radial-gradient(#FFFFFF 1.3px, transparent 1.3px),
-      radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px),
-      radial-gradient(#FFFFFF 0.7px, transparent 0.7px);
-    background-size: 110px 110px, 160px 160px, 75px 75px;
-    background-position: 0 0, 50px 80px, 25px 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    box-sizing: border-box;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-  }
-  .cosmic-club-widget:active {
-    transform: translate(4px, 4px) !important;
-    box-shadow: 1px 1px 0px #E1DAB9 !important;
-  }
-  .cosmic-club-widget img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    display: block;
-    pointer-events: none;
-  }
-</style>
-
-<a href="https://seea-star.github.io/Cosmic-S-Club/" target="_blank" class="cosmic-club-widget">
-  <img src="https://seea-star.github.io/Cosmic-S-Club/Senza%20titolo%2013_20260914185659.png" alt="Cosmic Club Member">
-</a>
-          </a>
           </div>
         </div>
 
@@ -319,8 +241,58 @@
           
           <a href="https://alphacentauri.neocities.org/"><img src="https://alphacentauri.neocities.org/_img/alphacentauri.gif" alt="alphacentauri"></a>
           
-        </div>
+          <a target="_blank" href="https://irrelevantreviews.neocities.org">
+	<img src="https://irrelevantreviews.neocities.org/assets/btn.gif" alt="Irrelevant Reviews" title="Irrelevant Reviews">
+</a>
 
+ <a target="_blank" href="https://aerialdash.neocities.org" title="ash"><img src="https://aerialdash.neocities.org/resources_art/sitebanner1.gif" alt="ASH"></a>
+ 
+ <a href="https://mixtapesanddialtones.neocities.org"><img src="https://mixtapesanddialtones.neocities.org/tash-mtdt2.gif" alt="Mixtapes & Dial Tones"></a>
+
+<a href="https://meowcammi.neocities.org/"><img src="https://meowcammi.neocities.org/miau.gif"></a>
+
+<a href="https://ransei.neocities.org/"><img src="https://ransei.neocities.org//assets/img/embeded.gif"></a>
+
+<a href="https://tapehiss.neocities.org/"><img src="https://tapehiss.neocities.org/media/button.png" width="88" height="31" alt="tapehiss"></a>
+
+<a href="https://shakeitoutmimi.neocities.org/"><img src="https://shakeitoutmimi.neocities.org/buttons/shakeitout.gif"></a>
+
+<a href="https://hypercrites.neocities.org" target="_blank"><img src="https://hypercrites.neocities.org/img/button.gif" alt="About hYpercrites"></a>
+
+<a href="https://heryne.neocities.org/" target="_blank"><img src="https://heryne.neocities.org/heryne_button01.png"></a>
+
+<a href="https://jellywaves.neocities.org" target="_blank"><img src="https://jellywaves.neocities.org/images/jellybutton.png"></a>
+        
+<a href="https://samsolarsystem.neocities.org/" target="_blank"><img src="https://file.garden/aTiWCoGB_i5vfo0E/Web%20button%20Sam%20solar%20system.gif"></a>
+
+<a href="https://perstar.neocities.org/" target="_blank"><img src="https://perstar.neocities.org/perstarbutton.png" alt="perstar" style="width: 88px; height: 31px; image-rendering: pixelated;"></a>
+
+<a href="https://sonic2k.neocities.org/" target="_blank"><img src="https://sonic2k.neocities.org/images/sonic2k_button.gif" alt="The World of Sonic2k"></a>
+
+<a href="https://seeone.neocities.org" target="_blank"><img src="https://seeone.neocities.org/Button.gif" alt="The World of Sonic2k"></a>
+
+<a href="https://fairysite.neocities.org/"><img src="https://fairysite.neocities.org/GRAPHICS/buttons/FairySite%20button(1).gif"></a>
+
+<a href="https://moonlitayanami.neocities.org" target="_blank"><img src="https://moonlitayanami.neocities.org/88%20x%2031/MoonofAyanamiButtonLink.gif" alt="Moonlit Ayanami"></a>
+
+<a href="https://sol-net.neocities.org/"><img src="https://sol-net.neocities.org/sitebutton.gif" style="margin:none;"></a>
+
+<a href="https://aithere.neocities.org/" target="_blank"><img src="https://aithere.neocities.org/homemedia/mybutton.gif" alt="Aithere's website"></a>
+    
+<a href="https://prueoftheshirefolk.neocities.org">
+  <img src="https://prueoftheshirefolk.neocities.org/prue-of-the-shirefolk-banner.webp" alt="Prue of the Shirefolk">
+</a>
+
+<a href="https://sybernetics.net/" target="_blank"><img src="https://sybernetics.net/images/myButtons/sybersbutton1.gif" alt="Cache of Curiosities" width="88" height="31"></a>
+
+
+<a  class="sl0pbutton" href="https://sl0p.neocities.org/" target="_blank"><img src="  https://file.garden/atZGS3tqiMJ-Ph48/sl0p.gif" alt="" </a>
+            
+<a href="https://lazer-bunny.neocities.org/" target="_blank"><img src="https://lazer-bunny.neocities.org/art_storage/site_buttons/Button_88x31.gif" alt="Cache of Curiosities" width="88" height="31"></a>
+                      
+
+
+        </div>
       </div>
     </div>
 
